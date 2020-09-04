@@ -30,7 +30,11 @@ namespace Day_5
                 case "-":
                     Console.WriteLine(Calculator.Subtraction(number1, number2));
                     break;
+                default:
+                    Console.WriteLine("invalid number");
+                    break;
             }
+            
 
         }
     }

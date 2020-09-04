@@ -6,7 +6,7 @@ namespace Day_5
 {
     class Calculator
     {
-        static double Multiplication(double number1, double number2)
+        public static double Multiplication(double number1, double number2)
         {
             String sign = Console.ReadLine();
             double result = 0;
@@ -18,7 +18,7 @@ namespace Day_5
 
             return result;
         }
-        static double Division(double number1, double number2)
+        public static double Division(double number1, double number2)
         {
             String sign = Console.ReadLine();
             double result = 0;
@@ -41,7 +41,7 @@ namespace Day_5
 
             return result;
         }
-        static double Sum(double number1, double number2)
+        public static double Sum(double number1, double number2)
         {
             String sign = Console.ReadLine();
             double result = 0;
@@ -52,7 +52,7 @@ namespace Day_5
 
             return result;
         }
-        static double Subtraction(double number1, double number2)
+        public static double Subtraction(double number1, double number2)
         {
             String sign = Console.ReadLine();
             double result = 0;
