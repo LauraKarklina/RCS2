@@ -6,11 +6,11 @@ namespace Day_5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ievadi pirmo skaitli: ");
-            double number1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Ievadi pirmo skaitli: ");
+            double number1 = InputDouble(1);
 
-            Console.WriteLine("Ievadi otro skaitli: ");
-            double number2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Ievadi otro skaitli: ");
+            double number2 = InputDouble(2);
 
             Console.WriteLine("Ievadi  +, -, *,/ ");
             String sign = Console.ReadLine();
@@ -31,10 +31,24 @@ namespace Day_5
                     Console.WriteLine(Calculator.Subtraction(number1, number2));
                     break;
                 default:
-                    Console.WriteLine("invalid number");
+                    Console.WriteLine("invalid actin");
                     break;
             }
             
+            static double InputDouble(double number)
+            {
+                double result = 0;
+                try
+                {
+                    Console.WriteLine("Ievadi"+ number+".skaitli: ");
+                    result= Convert.ToDouble(Console.ReadLine());
+                }
+                catch
+                {
+                    result = InputDouble(number);
+                }
+                return result;
+            }
 
         }
     }
