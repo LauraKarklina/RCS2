@@ -27,7 +27,7 @@ namespace Day_5_Lists
                     case "Pievienot":
                         Console.WriteLine("Cik vērtības pievienot? ");
                         int vertibuSkaits = Convert.ToInt32(Console.ReadLine());
-                        for (int i = 1; i < vertibuSkaits; i++)
+                        for (int i = 0; i < vertibuSkaits; i++)
                         {
                             Console.WriteLine("Pievieno vērtību nr." + i);
                             lst.Add(Console.ReadLine());
