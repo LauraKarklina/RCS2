@@ -8,58 +8,26 @@ namespace Day_5
     {
         public static double Multiplication(double number1, double number2)
         {
-            String sign = Console.ReadLine();
-            double result = 0;
-            if (sign == "*")
-            {
-                result = number1 * number2;
-            }
 
+            double result = number1 * number2;
 
             return result;
         }
         public static double Division(double number1, double number2)
         {
-            String sign = Console.ReadLine();
-            double result = 0;
-
-
-            if (sign == "/")
-            {
-                if (number1 > number2)
-                {
-                    result = number1 / number2;
-
-                }
-                else
-                {
-                    result = number2 / number1;
-                }
-
-            }
-
+            double result = number1 / number2;
 
             return result;
         }
         public static double Sum(double number1, double number2)
         {
-            String sign = Console.ReadLine();
-            double result = 0;
-            if (sign == "+")
-            {
-                result = number1 + number2;
-            }
+            double result = number1 + number2;
 
             return result;
         }
         public static double Subtraction(double number1, double number2)
         {
-            String sign = Console.ReadLine();
-            double result = 0;
-            if (sign == "-")
-            {
-                result = number1 - number2;
-            }
+            double result = number1 - number2;
 
             return result;
         }
