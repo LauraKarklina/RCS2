@@ -32,7 +32,7 @@ namespace Day_6_objekti
 
         public void PrintInfo()
         {
-            Console.WriteLine(vards + " " + uzvards + " " + kurss);
+            Console.WriteLine(vards + " " + uzvards + " " + kurss +".kurss");
         }
 
 
