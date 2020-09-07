@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Day5_Objects
+namespace Day6
 {
     class Program
     {
@@ -67,7 +67,7 @@ namespace Day5_Objects
             catch 
             {
                 Console.WriteLine("Nav tāda elementa");
-                RemoveElement(lst);
+                //RemoveElement(lst);
 
             }
 
