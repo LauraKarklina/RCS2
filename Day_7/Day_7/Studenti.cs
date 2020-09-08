@@ -18,11 +18,15 @@ namespace Day_7
             }
             set
             {
-                if (_kurss > 3)
+                if (value >= 1 && value <= 3)
+                {
+                    _kurss = value;
+                }
+                else if (value > 3)
                 {
                     _kurss = 3;
                 }
-                else if (_kurss < 1)
+                else
                 {
                     _kurss = 1;
                 }
