@@ -37,7 +37,7 @@ namespace Day_7
         {
             this.vards = vards;
             this.uzvards = uzvards;
-            _kurss = kurss;
+            this.kurss = kurss;
             
         }
         public Studenti()
@@ -49,7 +49,7 @@ namespace Day_7
 
         public void PrintInfo()
         {
-            Console.WriteLine(vards + " " + uzvards + " " + kurss);
+            Console.WriteLine(vards + " " + uzvards + " " + kurss +".kurss");
         }
 
 
