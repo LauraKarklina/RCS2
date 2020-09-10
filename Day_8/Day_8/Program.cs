@@ -44,10 +44,10 @@ namespace Day_8
                 return;
             }
 
-            Console.WriteLine("Figūru skaits būs te");
-            foreach (Taisnsturis stud in lstTaisnsturis)
+            Console.WriteLine("Figūru skaits būs te:");
+            foreach (Taisnsturis taisn in lstTaisnsturis)
             {
-                stud.PrintInfo();
+                taisn.Laukums();
             }
 
             Console.WriteLine();
