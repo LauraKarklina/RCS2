@@ -16,24 +16,32 @@ namespace Day_8
         {
             for (int i = 0; i < 10; i++)
             {
+
+                double garums = 0;
+                double augstums = 0;
                 try
                 {
                     Console.WriteLine("Norādi garumu taisnsturim nr." + i);
-                    int garums = Convert.ToInt32(Console.ReadLine());
+                    garums = Convert.ToDouble(Console.ReadLine());
 
                     Console.WriteLine("Norādi augstumu taisnsturim nr." + i);
-                    int augstums = Convert.ToInt32(Console.ReadLine());
+                    augstums = Convert.ToDouble(Console.ReadLine());
 
 
-                    lstTaisnsturis.Add(new Taisnsturis(garums, augstums));
+                    
                 }
                 catch
                 {
                     Console.WriteLine("Nederīga vērtība");
+                    continue;
                 }
+                lstTaisnsturis.Add(new Taisnsturis(garums, augstums));
             }
             
         }
+        
+
+
         private static void PrintLst(List<Taisnsturis> lstTaisnsturis)
         {
             Console.WriteLine();

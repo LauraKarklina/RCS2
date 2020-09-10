@@ -6,8 +6,8 @@ namespace Day_8
 {
     class Taisnsturis
     {
-        private int _garums;
-        public int garums
+        private double _garums;
+        public double garums
         {
             get
             {
@@ -15,7 +15,7 @@ namespace Day_8
             }
             set
             {
-                if (value >= 1)
+                if (value > 0)
                 {
                     _garums = value;
                 }
@@ -27,8 +27,8 @@ namespace Day_8
             }
         }
 
-        private int _augstums;
-        public int augstums
+        private double _augstums;
+        public double augstums
         {
             get
             {
@@ -36,7 +36,7 @@ namespace Day_8
             }
             set
             {
-                if (value >= 1)
+                if (value > 0)
                 {
                     _augstums = value;
                 }
@@ -48,16 +48,16 @@ namespace Day_8
             }
         }
 
-        public Taisnsturis(int garums, int augstums)
+        public Taisnsturis(double garums, double augstums)
         {
             this.garums = garums;
             this.augstums = augstums;
             
 
         }
-        public void PrintInfo()
+        public double Laukums()
         {
-            Console.WriteLine(garums*augstums);
+            return garums*augstums;
         }
     }
 }
