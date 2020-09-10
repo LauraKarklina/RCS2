@@ -64,6 +64,7 @@ namespace Day_7
 
             while (choice != "3")
             {
+                Console.WriteLine("Izvēlies darbību:");
                 Console.WriteLine("0- Pievienot");
                 Console.WriteLine("1- Dzēst");
                 Console.WriteLine("2- Izvadīt");
@@ -121,7 +122,7 @@ namespace Day_7
             try
             {
                 Console.WriteLine();
-                Console.WriteLine("Kuru studentu vēlies izdzēst?");
+                Console.WriteLine("Norādi indeksu, kuru studentu vēlies dzēst?");
                 int studentNumber = Convert.ToInt32(Console.ReadLine());
 
                 students.RemoveAt(studentNumber);
@@ -147,9 +148,15 @@ namespace Day_7
                 return;
             }
 
-            foreach (Studenti stud in students)
+            /*foreach (Studenti stud in students)
             {
                 stud.PrintInfo();
+            }*/
+
+            for (int i = 0; i < students.Count; i++)
+            {
+                Console.WriteLine(i+ ":" +students[i].vards+" " 
+                    + students[i].uzvards +"" + students[i].kurss);
             }
 
             Console.WriteLine();
