@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Day_9
 {
@@ -6,10 +7,10 @@ namespace Day_9
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ievadiet faila nosaukumu:");
-            String name = Console.ReadLine();
+            List<String> lst = new List<String> { "a", "b", "c", "d" };
 
-            FileOperations.Write(name);
+            String name = "new.txt";
+            FileOperations.Write(lst, "new.txt");
 
             FileOperations.Read(name);
         }

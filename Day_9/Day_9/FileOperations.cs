@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Enumeration;
 using System.Text;
 
 namespace Day_9
@@ -8,12 +9,13 @@ namespace Day_9
     class FileOperations
 
     {
-        private const String defName = @"C:\Users\Laura IT\Desktop\C_sharp\RCS2\Day_9\Day_9\bin\Debug\netcoreapp3.1";
+        private const String defaultPath = @"C:\Users\Laura IT\Desktop\RCS2_c_sharp\Day_9\Day_9\bin\Debug\netcoreapp3.1";
         public static void Read(String name)
         {
+
             try
             {
-                StreamReader sr = new StreamReader(name+defName);
+                StreamReader sr = new StreamReader(name+ defaultPath, true);
 
                 String line = sr.ReadLine();
 
@@ -30,14 +32,20 @@ namespace Day_9
                 Console.WriteLine("Neizdevas nolasit failu!");
             }
         }
-        public static void Write(String name)
+        public static void Write(List<String> lst, String name)
         {
 
             try
             {
-                StreamWriter sw = new StreamWriter(name+defName, true);
-                sw.WriteLine("some text");
-                
+                StreamWriter sw = new StreamWriter("new.txt", true);
+
+                String reverseOrder = "";
+                for (int i = lst.Count - 1; i > -1; i--)
+                {
+                    reverseOrder += lst[i];
+                }
+                Console.WriteLine(reverseOrder);
+
 
                 sw.Close();
             }
