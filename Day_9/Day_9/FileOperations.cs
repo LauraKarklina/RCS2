@@ -6,12 +6,14 @@ using System.Text;
 namespace Day_9
 {
     class FileOperations
+
     {
+        private const String defName = @"C:\Users\Laura IT\Desktop\C_sharp\RCS2\Day_9\Day_9\bin\Debug\netcoreapp3.1";
         public static void Read(String name)
         {
             try
             {
-                StreamReader sr = new StreamReader(name+"test.txt");
+                StreamReader sr = new StreamReader(name+defName);
 
                 String line = sr.ReadLine();
 
@@ -33,7 +35,7 @@ namespace Day_9
 
             try
             {
-                StreamWriter sw = new StreamWriter(name+"Test.txt", true);
+                StreamWriter sw = new StreamWriter(name+defName, true);
                 sw.WriteLine("some text");
                 
 
