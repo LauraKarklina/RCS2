@@ -27,8 +27,6 @@ namespace Day_8
                     Console.WriteLine("Norādi augstumu taisnsturim nr." + i);
                     augstums = Convert.ToDouble(Console.ReadLine());
 
-
-                    
                 }
                 catch
                 {
