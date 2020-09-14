@@ -34,10 +34,10 @@ namespace Day_9
         }
         public static void Write(List<String> lst, String name)
         {
-
+            name = "new.txt";
             try
             {
-                StreamWriter sw = new StreamWriter("new.txt", true);
+                StreamWriter sw = new StreamWriter(name, true);
 
                 String reverseOrder = "";
                 for (int i = lst.Count - 1; i > -1; i--)
